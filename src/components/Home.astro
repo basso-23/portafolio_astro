@@ -1,0 +1,24 @@
+---
+import projects from "../projects.json";
+---
+
+<main>
+  {
+    projects.map((data) => (
+      <section class="mb-20">
+        <div>
+          <strong>name: </strong>
+          {data.name}
+        </div>
+        <div>
+          <strong>url: </strong>
+          {data.url}
+        </div>
+        <div>
+          <strong>video: </strong>
+          {data.video}
+        </div>
+      </section>
+    ))
+  }
+</main>

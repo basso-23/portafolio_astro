@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "Tutorial de Python Básico",
+    "url": "https://www.ejemplo.com/python-basico",
+    "video": "https://www.ejemplo.com/videos/python-basico.mp4"
+  },
+  {
+    "id": "2",
+    "name": "Introducción a la Inteligencia Artificial",
+    "url": "https://www.ejemplo.com/ia-introduccion",
+    "video": "https://www.ejemplo.com/videos/ia-introduccion.mp4"
+  },
+  {
+    "id": "3",
+    "name": "Cómo crear una página web con HTML y CSS",
+    "url": "https://www.ejemplo.com/html-css",
+    "video": "https://www.ejemplo.com/videos/html-css.mp4"
+  }
+]
