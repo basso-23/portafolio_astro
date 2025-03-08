@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+.cards_container {
+  padding: 24px;
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+}
+
+.card {
+  aspect-ratio: 9/12;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #cacaca;
+}
+
+.video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 540px) {
+  .cards_container {
+    padding: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  .card {
+    aspect-ratio: auto;
+    height: 95dvh;
+  }
+}
