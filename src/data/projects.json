@@ -1,8 +1,32 @@
 [
   {
     "id": "1",
+    "name": "Webflow Partner",
+    "url": "https://webflow.com/?pscd=try.webflow.com&ps_partner_key=dGluaG5ndXllbjkyNzU&ps_xid=zQlxP76Ohn1JwJ&gsxid=zQlxP76Ohn1JwJ&gspk=dGluaG5ndXllbjkyNzU",
+    "video": "/videos/webflow-partner.mp4"
+  },
+  {
+    "id": "4",
     "name": "SpencerGabor",
     "url": "https://spencergabor.work/",
-    "video": "/videos/spencer_gabor.mp4"
+    "video": "/videos/spencergabor-thumb.mp4"
+  },
+  {
+    "id": "2",
+    "name": "C.W. Group",
+    "url": "https://www.cwgroup.com/",
+    "video": "/videos/cwgroup-thumb.mp4"
+  },
+  {
+    "id": "3",
+    "name": "Wimp Decaf Coffee",
+    "url": "https://www.wimpdecaf.com/",
+    "video": "/videos/wimpdecaf-thumb.mp4"
+  },
+  {
+    "id": "5",
+    "name": "Bavet",
+    "url": "https://bavet.eu/",
+    "video": "/videos/bavet-thumb.mp4"
   }
 ]

@@ -1,0 +1,36 @@
+---
+import projects from "../data/projects.json";
+---
+
+<body class="">
+  <swiper-container
+    class="mySwiper"
+    pagination="true"
+    pagination-clickable="true"
+    slides-per-view="3"
+    grid-rows="2"
+    space-between="12"
+  >
+    {
+      projects.map((data) => (
+        <swiper-slide>
+          <a
+            href={data.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="card"
+          >
+            <video class="video-background" autoplay loop muted playsinline>
+              <source src={data.video} type="video/mp4" />
+              Tu navegador no soporta videos.
+            </video>
+          </a>
+        </swiper-slide>
+      ))
+    }
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
+    ></script>
+  </swiper-container>
+</body>

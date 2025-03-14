@@ -2,15 +2,32 @@
 import projects from "../data/projects.json";
 ---
 
-<main class="cards_container">
-  {
-    projects.map((data) => (
-      <a href={data.url} target="_blank" rel="noopener noreferrer" class="card">
-        <video class="video-background" autoplay loop muted playsinline>
-          <source src={data.video} type="video/mp4" />
-          Tu navegador no soporta videos.
-        </video>
-      </a>
-    ))
-  }
-</main>
+<div class="main-container">
+  <div class="cards-container">
+    {
+      projects.map((data, i) => (
+        <div class="card">
+          <a
+            href={data.url}
+            target="-blank"
+            rel="noopener noreferrer"
+            class="video-container"
+          >
+            <div class="skeleton-image" id={"loader-" + i} />
+            <video
+              class="video-background hidden"
+              autoplay
+              loop
+              muted
+              playsinline
+              id={"video-" + i}
+              onloadeddata={`document.getElementById("loader-${i}").style.display = "none"; document.getElementById("video-${i}").classList.remove("hidden");`}
+            >
+              <source src={data.video} type="video/mp4" />
+            </video>
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</div>
